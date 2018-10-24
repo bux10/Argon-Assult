@@ -584,6 +584,8 @@ MonoBehaviour:
   controlPitchFactor: -20
   controlYawFactor: 10
   controlRollFactor: -50
+  fireRate: 1
+  ps: {fileID: 1340885401}
 --- !u!1 &1193711683
 GameObject:
   m_ObjectHideFlags: 0
@@ -651,9 +653,19 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 198800417504648768, guid: 696fb1823506aaf45b47780abce27d09,
+        type: 2}
+      propertyPath: looping
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 696fb1823506aaf45b47780abce27d09, type: 2}
   m_IsPrefabAsset: 0
+--- !u!198 &1340885401 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 198800417504648768, guid: 696fb1823506aaf45b47780abce27d09,
+    type: 2}
+  m_PrefabInternal: {fileID: 1875125456}
 --- !u!4 &1395051405 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4651612700666892, guid: 696fb1823506aaf45b47780abce27d09,
@@ -857,6 +869,11 @@ Prefab:
     - target: {fileID: 1632121366461320, guid: 696fb1823506aaf45b47780abce27d09, type: 2}
       propertyPath: m_Name
       value: Bullets (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 198800417504648768, guid: 696fb1823506aaf45b47780abce27d09,
+        type: 2}
+      propertyPath: looping
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 696fb1823506aaf45b47780abce27d09, type: 2}

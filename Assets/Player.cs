@@ -17,6 +17,10 @@ public class Player : MonoBehaviour {
 
     [SerializeField] float controlRollFactor = -30f;
 
+    [SerializeField] int fireRate = 3;
+
+    [SerializeField] ParticleSystem ps;
+
     float xThrow, yThrow;
 
 	void FixedUpdate ()
@@ -27,7 +31,10 @@ public class Player : MonoBehaviour {
     }
     void shoot()
     {
-        if (CrossPlatformInputManager.GetButton("Fire1")) print("PEW!");
+        if (CrossPlatformInputManager.GetButton("Fire1"))
+        {
+            ps.Emit(fireRate);
+        }
     }
 
     void processTranlation()
